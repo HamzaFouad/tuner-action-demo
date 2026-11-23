@@ -19,7 +19,7 @@ jobs:
       - id: case
         run: grep -E '^[a-z_]+=' .github/case.env >> "$GITHUB_OUTPUT"
       - id: tuner
-        uses: usetuner/tuner-action@feat/ENG-1640-action-v1
+        uses: usetuner/tuner-action@main
         with:
           api-key: ${{ secrets.TUNER_API_KEY }}
           base-url: https://voice-api.staging.ginni.ai
